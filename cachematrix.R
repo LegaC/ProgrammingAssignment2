@@ -52,6 +52,6 @@ cacheSolve <- function(InputM, ...) {
      message("calculating inverse matrix and cacheing data")
      data <- InputM$get()         ## Retrieve the input matrix
      InvM <- solve(data, ...)     ## Calculate the inverse
-     InputM$setInvM(InvM)         ## Cache the inverse to later use
+     InputM$setInvM(InvM)         ## Cache the inverse for later use
      InvM                         ## Return the inverse matrix
 }
